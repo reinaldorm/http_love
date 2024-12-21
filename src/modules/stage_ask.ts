@@ -10,9 +10,14 @@ const nav = stage_ask.querySelector('.stage_nav') as HTMLElement;
 const yes = nav.querySelector('.yes') as HTMLElement;
 const no = nav.querySelector('.no') as HTMLElement;
 
+const next_stage = document.querySelector('#stage_blue') as HTMLElement;
+
 observe_class(stage_ask, start);
 
-function finish() {}
+function finish() {
+  stage_ask.classList.remove('active');
+  next_stage.classList.add('active');
+}
 
 function startAnimation(splitText: HTMLElement[]) {
   gsap.to(splitText, {
@@ -27,8 +32,6 @@ function startAnimation(splitText: HTMLElement[]) {
 }
 
 function start() {
-  finish();
-
   const tl = gsap.timeline();
 
   yes.addEventListener('click', finish);

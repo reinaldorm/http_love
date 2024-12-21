@@ -19,7 +19,7 @@ observe_class(stage_loading, start);
 const next_stage = document.querySelector('#stage_timeline') as HTMLElement;
 
 const max_presses = 30;
-let presses = 29;
+let presses = 0;
 
 function animate_heart(loading_heart: HTMLElement) {
   const tl = gsap.timeline();
@@ -80,15 +80,13 @@ function animate_key() {
 function animate_bar() {
   gsap.to(loading_inner, {
     xPercent: `+=${100 / max_presses}`,
-    duration: 0.5,
+    duration: 0.1,
     ease: 'power4.out',
   });
 }
 
 function press(ev: KeyboardEvent) {
   if (ev.code === 'Space') {
-    if (presses === 0) loading_key.classList.remove('inactive');
-
     presses += 1;
 
     if (presses >= max_presses) finish();

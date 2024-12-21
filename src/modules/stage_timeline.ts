@@ -17,7 +17,7 @@ const next_stage = document.querySelector('#stage_ask') as HTMLElement;
 
 observe_class(stage_timeline, start);
 
-let step = 3;
+let step = 0;
 let max_steps = 4;
 let can_forward = false;
 
