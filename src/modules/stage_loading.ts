@@ -19,7 +19,7 @@ observe_class(stage_loading, start);
 const next_stage = document.querySelector('#stage_timeline') as HTMLElement;
 
 const max_presses = 30;
-let presses = 0;
+let presses = 29;
 
 function animate_heart(loading_heart: HTMLElement) {
   const tl = gsap.timeline();
@@ -104,7 +104,9 @@ function start() {
   loading_key_rect = loading_key.getBoundingClientRect();
   loading_outer_rect = loading_outer.getBoundingClientRect();
 
-  const tl = gsap.timeline({ onComplete: () => window.addEventListener('keyup', press) });
+  window.addEventListener('keyup', press);
+
+  const tl = gsap.timeline();
 
   tl.from(loading_key, {
     y: 25,

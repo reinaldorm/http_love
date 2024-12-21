@@ -17,7 +17,7 @@ const next_stage = document.querySelector('#stage_ask') as HTMLElement;
 
 observe_class(stage_timeline, start);
 
-let step = 0;
+let step = 3;
 let max_steps = 4;
 let can_forward = false;
 
@@ -120,11 +120,7 @@ function start() {
     }
   });
 
-  const tl = gsap.timeline({
-    onComplete() {
-      can_forward = true;
-    },
-  });
+  const tl = gsap.timeline();
 
   tl.from(photo_array, {
     stagger: {
@@ -150,6 +146,9 @@ function start() {
         alpha: 0,
         ease: 'power4',
         duration: 1.5,
+        onComplete() {
+          can_forward = true;
+        },
       },
       '-=0.75'
     )

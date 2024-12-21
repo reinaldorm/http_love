@@ -5,6 +5,7 @@
 
   .asking {
     margin-bottom: 1.75rem;
+    display: flex;
 
     * {
       font-family: 'Great Vibes';
@@ -13,25 +14,11 @@
     }
 
     > :nth-child(6) {
-      margin-right: 1rem;
+      margin-right: 1.5rem;
     }
 
     > :nth-child(13) {
-      margin-right: 1rem;
-    }
-  }
-
-  .heart_end {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    translate: -50% -50%;
-    display: none;
-
-    &.active {
-      display: block;
-      z-index: 9;
-      scale: 0;
+      margin-right: 1.5rem;
     }
   }
 
