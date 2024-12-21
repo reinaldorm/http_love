@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import '../styles/stage_ask.scss';
 
 const stage_ask = document.querySelector('#stage_ask') as HTMLElement;
-const asking = stage_ask.querySelector('.asking') as HTMLElement;
+// const asking = stage_ask.querySelector('.asking') as HTMLElement;
 
 const splitText = [...stage_ask.querySelectorAll('.asking div')] as HTMLElement[];
 const nav = stage_ask.querySelector('.stage_nav') as HTMLElement;
