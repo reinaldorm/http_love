@@ -39,7 +39,7 @@ function start() {
       ease: 'none',
     })
     .to(bottom, {
-      text: 'Você é especial de um jeito que transforma meus dias, e tudo o que eu quero é estar ao seu lado, vivendo algo único e verdadeiro.',
+      text: 'Agora podemos ir buscar a aliança.',
       duration: 2,
       delay: 1,
       ease: 'none',
