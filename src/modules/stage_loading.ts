@@ -211,7 +211,7 @@ function start_typing() {
       delay: 1,
       duration: 1,
       onComplete() {
-        stage_loading.classList.remove('active');
+        stage_loading.remove();
         next_stage.classList.add('active');
       },
     });

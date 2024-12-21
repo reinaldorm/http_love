@@ -15,7 +15,7 @@ const next_stage = document.querySelector('#stage_blue') as HTMLElement;
 observe_class(stage_ask, start);
 
 function finish() {
-  stage_ask.classList.remove('active');
+  stage_ask.remove();
   next_stage.classList.add('active');
 }
 

@@ -46,6 +46,7 @@ function start() {
     })
     .from(wrapper, {
       alpha: 0,
+      duration: 3,
       onStart() {
         wrapper.classList.add('active');
       },

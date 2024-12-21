@@ -166,4 +166,5 @@ function start() {
 
 function finish() {
   next_stage.classList.add('active');
+  stage_timeline.remove();
 }
