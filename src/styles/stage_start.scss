@@ -1,0 +1,48 @@
+#stage_start {
+  isolation: isolate;
+
+  .start_background {
+    width: 100dvw;
+    height: 100dvh;
+    position: absolute;
+    background-color: #323131;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+
+  .start_button {
+    --heart_fill: #313131;
+    --shadow_y: 0.5rem;
+
+    position: relative;
+    padding: 2.5rem;
+    border-radius: 5rem;
+    background: #4e4e4e;
+    box-shadow: 0px var(--shadow_y) 0px 0px #292929;
+    border: none;
+    transition: all 0.1s ease;
+
+    &:not(.pressed) {
+      cursor: pointer;
+    }
+
+    .start_heart {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+
+      path {
+        transition: all 0.1s ease;
+        fill: var(--heart_fill);
+      }
+    }
+
+    &:hover {
+      &:not(.pressed) {
+        filter: brightness(0.95);
+      }
+    }
+  }
+}

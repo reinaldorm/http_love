@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Great+Vibes&family=Hina+Mincho&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/icon.svg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eny...</title>
+</head>
+
+<body>
+  <div id="app">
+    <div id="stage_start">
+      <div class="start_background"></div>
+      <button class="start_button">
+        <svg class="start_heart" width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 26.8063L14.636 25.5743C12.4569 23.5957 10.6548 21.8955 9.22967 20.4737C7.80478 19.0519 6.67556 17.7891 5.842 16.6853C5.00822 15.5816 4.42656 14.5746 4.097 13.6643C3.76745 12.7541 3.60267 11.8306 3.60267 10.8937C3.60267 9.05501 4.22267 7.51568 5.46267 6.27568C6.70289 5.03546 8.24222 4.41534 10.0807 4.41534C11.2304 4.41534 12.3169 4.68757 13.34 5.23201C14.3629 5.77646 15.2496 6.56623 16 7.60134C16.7751 6.56623 17.6672 5.77646 18.6763 5.23201C19.6852 4.68757 20.7662 4.41534 21.9193 4.41534C23.7578 4.41534 25.2971 5.03523 26.5373 6.27501C27.7773 7.51457 28.3973 9.05323 28.3973 10.891C28.3973 11.8295 28.2326 12.7538 27.903 13.664C27.5734 14.5745 26.992 15.5813 26.1587 16.6847C25.3253 17.788 24.1973 19.051 22.7747 20.4737C21.3522 21.8966 19.5487 23.5968 17.364 25.5743L16 26.8063Z" fill="#313132" />
+        </svg>
+
+      </button>
+    </div>
+    <div id="stage_loading">
+      <button class="loading_key inactive">ESPAÇO</button>
+      <div class="loading_bar">
+        <div class="loading_outer">
+          <div class="loading_inner">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 26.8063L14.636 25.5743C12.4569 23.5957 10.6548 21.8955 9.22967 20.4737C7.80478 19.0519 6.67556 17.7891 5.842 16.6853C5.00822 15.5816 4.42656 14.5746 4.097 13.6643C3.76745 12.7541 3.60267 11.8306 3.60267 10.8937C3.60267 9.05501 4.22267 7.51568 5.46267 6.27568C6.70289 5.03546 8.24222 4.41534 10.0807 4.41534C11.2304 4.41534 12.3169 4.68757 13.34 5.23201C14.3629 5.77646 15.2496 6.56623 16 7.60134C16.7751 6.56623 17.6672 5.77646 18.6763 5.23201C19.6852 4.68757 20.7662 4.41534 21.9193 4.41534C23.7578 4.41534 25.2971 5.03523 26.5373 6.27501C27.7773 7.51457 28.3973 9.05323 28.3973 10.891C28.3973 11.8295 28.2326 12.7538 27.903 13.664C27.5734 14.5745 26.992 15.5813 26.1587 16.6847C25.3253 17.788 24.1973 19.051 22.7747 20.4737C21.3522 21.8966 19.5487 23.5968 17.364 25.5743L16 26.8063Z" fill="#F2ACCF" />
+            </svg>
+          </div>
+        </div>
+        <div class="loading_legend">
+          Aperte espaço pra carregar nosso <span class="timeline_starter">amor</span>...
+        </div>
+      </div>
+      <p class="starting_legend">amor</p>
+    </div>
+    <div id="stage_timeline">
+      <div class="timeline_top">
+        <div class="photo">
+          <img src="/timeline/timeline_0_0.png" class="outer">
+          <div class="inner">
+            <img src="/timeline/photos/0_0.jpg">
+          </div>
+        </div>
+        <div class="photo">
+          <img src="/timeline/timeline_0_1.png" class="outer">
+          <div class="inner">
+            <img src="/timeline/photos/0_1.jpg">
+          </div>
+        </div>
+        <div class="photo">
+          <img src="/timeline/timeline_0_2.png" class="outer">
+          <div class="inner">
+            <img src="/timeline/photos/0_2.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="timeline_bottom">
+        <button class="timeline_button">
+          <img src="/arrow.svg">
+        </button>
+        <div class="timeline">
+          <button class="timeline_point active"></button>
+          <button class="timeline_point"></button>
+          <button class="timeline_point"></button>
+          <button class="timeline_point"></button>
+          <div class="timeline_progress"></div>
+        </div>
+        <p class="timeline_legend">
+          Mova-se pela nossa história
+        </p>
+      </div>
+    </div>
+    <div id="stage_ask">
+      <p class="asking">Aceita namorar comigo?</p>
+      <nav class="stage_nav">
+        <button class="yes">Sim</button>
+        <button class="no">
+          <span>Não</span>
+          <span>Sim</span>
+        </button>
+      </nav>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
